@@ -3,6 +3,11 @@ import pandas as pd
 import joblib
 import numpy as np
 
+# Disable WebSocket compression and force static frontend
+st.set_option('server.enableWebsocketCompression', False)
+st.set_option('server.enableCORS', False)
+st.set_option('server.enableXsrfProtection', False)
+
 # Set page configuration
 st.set_page_config(page_title="Multi-Outcome Prediction App", layout="wide", page_icon="📊")
 
